@@ -1,0 +1,314 @@
+@font-face {
+    font-family: Beyonders;
+    src: url(../Fonts/Beyonders.ttf);
+}
+
+*{
+    text-decoration: none;
+    margin: 1%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.nav{
+    width: 100%;
+    background-color: transparent;
+    justify-content: space-between;
+    padding: 1 10%;
+    align-items:center;
+    overflow: hidden;
+     
+}   
+.nav-logo{
+    font-size: 25px;
+    color: black;
+    text-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}
+
+.nav-menu ul{
+    display: flex;
+    list-style: none;
+    font-family: Beyonders;
+    
+}
+.nav-menu ul a{
+    text-decoration: none;
+    color: black;
+    text-shadow: 5px 5px 5px rgba(0,0,0,.3);
+    font-size: 12px;
+    margin: 0 15px;
+    align-items: center;
+}
+
+.nav-menu ul a:hover{
+    color: orange;
+}
+
+header {
+    box-sizing: border-box;
+    position: fixed;
+    color: white;
+    width: 98%;
+    margin: 10px;
+    border: 1px solid white;
+    background-color:lightslategray;
+    text-align: center;
+    overflow: hidden;
+    z-index: -1;
+    align-items: center;
+}
+.menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 8rem;
+    padding: 2%;        
+}
+.video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.login{
+    display: flex;
+    justify-content: end;
+    align-items: right;
+    background-color: lightslategray;
+    border-radius: 100%;
+    text-overflow: hidden;
+}
+.body{
+    background-color: rgba(17, 31, 62, 0.669);
+    align-items: center;
+    text-align: center;
+    font-family: Beyonders;
+    flex-wrap: wrap
+}
+
+.menu-logo{
+    margin: 10px;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+.menu:hover{
+    text-decoration:underline overline;
+    
+}
+
+.snowboard{
+    size: 50%;
+    flex-wrap: wrap
+}
+
+
+.menu-hotel{
+    background-color: lightslategray;
+    border-radius: 100%;
+    text-overflow: hidden;
+    opacity: 60%;
+}
+
+.menu-equipment{
+    background-color: lightslategray;
+    border-radius: 100%;
+    text-overflow: hidden;
+    opacity: 60%;
+}
+
+.menu-classes{
+    background-color: lightslategray; opacity: 60%;
+    border-radius: 100%;
+    text-overflow: hidden; 
+    opacity: 60%;
+}
+
+.menu-weather{
+    background-color: lightslategray;
+    border-radius: 100%;
+    text-overflow: hidden;
+    opacity: 60%;
+}
+
+/*footer*/
+.footer{
+    font-size:medium;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 1%;
+       
+}
+
+.footer-privacy{
+    background-color: lightslategray;
+    border-radius: 100%;
+    text-overflow: hidden;
+    background-size: contain;
+}
+
+.footer-classes{
+    background-color: lightslategray;
+    border-radius: 100%;
+    text-overflow: hidden;
+}
+.footer-contacto{
+    background-color: lightslategray;
+    border-radius: 100%;
+    text-overflow: hidden;
+}
+.footer-legal{
+    background-color: lightslategray;
+    border-radius: 100%;
+    text-overflow: hidden;
+}
+
+.footer-login{
+    background-color: lightslategray;
+    border-radius: 100%;
+    text-overflow: hidden;
+}
+.footer-weather{
+    background-color: lightslategray;
+    border-radius: 100%;
+    text-overflow: hidden;
+}
+
+
+
+.pic1{
+    border: solid;
+    border-color: rgb(60, 60, 58);
+        flex-wrap: wrap;
+}
+
+
+
+.pic2{
+    border: solid;
+    border-color: rgb(60, 60, 58);
+    flex-wrap: wrap
+}
+
+
+
+.pic3{
+    border: solid;
+    border-color: rgb(60, 60, 58);
+    flex-wrap: wrap;
+   width: 93rem
+    
+}
+
+
+
+.andorra{
+    text-decoration: underline;
+    color: rgba(17, 31, 62, 0.669);
+    border: 2px;
+    text-shadow: 5px 5px 5px;
+    gap: 1;
+    padding: 5px;
+    flex-wrap: wrap
+     
+}
+.parrafo{
+    text-align: center;
+    justify-content: center;    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: lightslategray ; opacity: 70%;    
+    border-style:inset  ;
+    flex-wrap: wrap
+}
+
+
+/*Overlay pics text*/
+.form{
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.overlay {
+  position:relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container1:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: rgb(172, 172, 172);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 2rem;
+  background-color:gainsboro ;
+  border-radius: 15%;
+}
+
+
+.form{
+    background-color: darkgray;
+    display:flex;
+    align-self: center;
+    flex-direction: column;
+    width: 30rem;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 40%;
+    border: solid;
+    border-radius: 7%;
+}
+
+.mySlides {
+    display:none;}
+    
+
+.w3-center{
+    font-family: beyonders;
+    color: rgb(4, 18, 31);
+    text-shadow: 5px 5px 5px;
+    display: flex; 
+    padding: 1%;
+    justify-content: center;
+  }
+
+.hotelbody{
+    background-color:lightslategray;
+}
+
+.text2{
+    border: solid;
+    font-family: impact;
+    text-align: justify;
+    justify-items: center;
+}

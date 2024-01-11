@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../Css/Style.css">
+
+<body class="hotelbody">
+    
+
+    <h2 class="w3-center">Stay in Andorra</h2>
+
+    <div class="w3-content w3-display-container">
+    <img class="mySlides" src="../Images/Alojamiento.jpg" style="width:100%">
+    <img class="mySlides" src="../Images/Alojamiento2.jpg" style="width:100%">
+    <img class="mySlides" src="../Images/Alojamiento3.jpg" style="width:100%">
+    <img class="mySlides" src="../Images/Alojamiento4.jpg" style="width:100%">
+    <img class="mySlides" src="../Images/Alojamiento5.jpg" style="width:100%">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <div>
+        <p class="text2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloremque laboriosam adipisci magnam! Eum ipsam aspernatur dicta ad quas ducimus, dolores excepturi. Aut voluptatibus corrupti veniam itaque sapiente repudiandae reiciendis error doloribus perspiciatis eveniet facilis sed quod neque voluptates architecto distinctio voluptatem ratione et maiores, commodi dolorem facere tempore quisquam!
+
+        </p>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+        
+</body>
+<footer class="footer2">
+
+    <nav class="nav">
+        
+
+        <div class="footer">
+            <ul class="footer">
+                <li class="footer-home">
+                    <a class="linkhome" href="../index.html">Home</a>
+                </li>
+                <li class="footer-legal">
+                    <a class="link" href="">Aviso legal</a>                        
+                </li>
+
+                <li class="footer-privacy">
+                    <a class="link" href="">Política de privacidad</a>                       
+                </li>
+                
+                <li class="footer-classes">
+                    <a href="">Política de cookies</a>                       
+                </li>
+
+                <li class="footer-login">
+                    <a class="login" href="login.html">contacto</a>
+                </li>
+            </ul>                    
+            
+            
+        </div>
+       
+
+
+    </nav>
+    
+</footer>
+
+</html>
